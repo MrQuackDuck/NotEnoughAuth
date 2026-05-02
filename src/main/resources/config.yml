@@ -1,0 +1,107 @@
+# After setting 'webIp' and 'webPort', take a look at the console output;
+# You will see a list of OAuth2 redirect URLs - copy these and paste them into your OAuth provider settings (e.g., Google, GitHub) when creating the application credentials.
+webIp: "127.0.0.1"
+webPort: 4177
+
+# Defines whether auth redirect links will contain "http" or "https";
+# For example, if you use Nginx/Apache as a reverse proxy ('80' → '4177') and Cloudflare for SSL certificate, set this to 'true';
+# For local testing, you may leave this as 'false'.
+useHttps: false
+
+# If you use tunneling software (such as 'playit.gg' or 'ngrok'), you may use this field for overriding the base URL (e.g., 'https://4be8-112-41-125-11.ngrok-free.app').
+overriddenRedirectUrlBase: ""
+
+# Time for a player to pass the auth process (in seconds).
+timeout: 90
+
+# Link for creating Google application: https://console.cloud.google.com/apis/credentials
+google:
+  enabled: true
+  clientId: "YOUR_GOOGLE_CLIENT_ID"
+  secret: "YOUR_GOOGLE_CLIENT_SECRET"
+
+# Link for creating GitHub application: https://github.com/settings/developers
+github:
+  enabled: true
+  clientId: "YOUR_GITHUB_CLIENT_ID"
+  secret: "YOUR_GITHUB_CLIENT_SECRET"
+
+# Link for creating GitLab application: https://gitlab.com/-/user_settings/applications
+gitlab:
+  enabled: true
+  clientId: "YOUR_GITLAB_APPLICATION_ID"
+  secret: "YOUR_GITLAB_SECRET"
+
+# Link for creating Discord application: https://discord.com/developers/applications
+discord:
+  enabled: true
+  clientId: "YOUR_DISCORD_CLIENT_ID"
+  secret: "YOUR_DISCORD_CLIENT_SECRET"
+
+# Link for creating Twitch application: https://dev.twitch.tv/console/apps/create
+twitch:
+  enabled: true
+  clientId: "YOUR_TWITCH_CLIENT_ID"
+  secret: "YOUR_TWITCH_CLIENT_SECRET"
+
+# Link to Telegram documentation: https://core.telegram.org/bots/telegram-login#tldr
+telegram:
+  enabled: true
+  clientId: "YOUR_TELEGRAM_BOT_CLIENT_ID"
+  secret: "YOUR_TELEGRAM_BOT_CLIENT_SECRET"
+
+messages:
+  "prefix": "&#C8D1DE[NotEnoughAuth]"
+  "auth-required": "&fAuthentication required to join this server."
+  "title": "&#FFDB60Welcome!"
+  "description": "Let's verify it's you using OAuth2.\nYou will be prompted to open your browser."
+  "google": "&#D5DEEAGoogle Account"
+  "google-hover": "Click for Google authentication"
+  "github": "&#D5DEEAGitHub Account"
+  "github-hover": "Click for GitHub authentication"
+  "gitlab": "&#D5DEEAGitLab Account"
+  "gitlab-hover": "Click for GitLab authentication"
+  "discord": "&#D5DEEADiscord Account"
+  "discord-hover": "Click for Discord authentication"
+  "twitch": "&#D5DEEATwitch Account"
+  "twitch-hover": "Click for Twitch authentication"
+  "telegram": "&#D5DEEATelegram Account"
+  "telegram-hover": "Click for Telegram authentication"
+  "auth-success": "Authentication successful."
+  "auth-success-description": "You can now return to Minecraft."
+  "auth-failed": "Authentication failed."
+  "account-mismatch": "This Minecraft account is linked to a different account in this OAuth provider."
+  "provider-mismatch": "This provider isn't linked to this player's account."
+  "invalid-state": "Invalid or expired state. Please try again."
+  "timeout": "Timeout."
+  "link-title": "&#FFDB60Link a provider"
+  "link-description": "You may &#A4D400&nlink&r an additional oAuth2 provider to your account to be able to use it as your additional sign-in option on this server."
+  "link-hover": "Click to link this provider"
+  "unlink-title": "&#FFDB60Unlink a provider"
+  "unlink-description": "You may choose an account to &#EB4C42&nunlink&r. If needed, you will be able to link the provider again."
+  "unlink-hover": "Click to unlink this provider"
+  "unlink-confirm-title": "&#FFDB60Are you sure?"
+  "unlink-confirm-description": "This provider will be removed from your account."
+  "confirm-unlink": "&#E74C3CConfirm Unlink"
+  "confirm-unlink-hover": "Permanently unlink this provider"
+  "confirm": "&#A4D400Confirm"
+  "cancel": "&#EB4C42Cancel"
+  "back": "&#EB4C42← Back"
+  "back-hover": "Go back to server list"
+  "info-header": "<prefix> &#ECF4FBCommands:"
+  "info-link": "\n &#D8E5EC&n/link&r&#ECF4FB - link an additional provider to your account."
+  "info-unlink": "\n &#D8E5EC&n/unlink&r&#ECF4FB - unlink one of the providers from your account."
+  "info-logout": "\n &#D8E5EC&n/logout&r&#ECF4FB - sign out of the account."
+  "info-reload": "\n &#D8E5EC&n/auth reload&r&#ECF4FB - reload the plugin configuration."
+  "successfully-linked": "<prefix> &#A4D400Linked successfully!"
+  "successfully-unlinked": "<prefix> &#A4D400Unlinked successfully!"
+  "provider-linked": "Provider linked successfully!"
+  "logged-out": "&fYou've successfully logged out."
+  "reloaded": "<prefix> &#ECF4FBReloaded!"
+  "disconnected": "Disconnected."
+  "command-not-found": "<prefix> &#E03E3EOops! That command doesn't exist, or you don't have enough permissions."
+  "not-enough-permissions": "<prefix> &#E03E3ENot enough permissions."
+  "one-provider-left": "<prefix> &#E03E3EYou have only one provider left linked to your account."
+  "all-providers-already-linked": "<prefix> &#ECF4FBYou've already linked all possible providers to your account!"
+  "rejoin": "<prefix> &#E03E3ESession hashes don't match. Please rejoin."
+  "an-error-occurred": "<prefix> &#E03E3EAn error occurred during reload! Check the console logs for details."

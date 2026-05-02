@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication - Success</title>
+  <link rel="icon" type="image/x-icon" href="https://fonts.grida.co/apple/emoji/160/2705.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      min-height: 100dvh;
+      background-color: #1C1C1D;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #272628;
+      border: 1px solid #363437;
+      border-radius: 6px;
+      padding: 24px;
+      width: 360px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    h1 {
+      font-family: DM Sans, sans-serif;
+      font-size: 18px;
+      color: #E6E6E6;
+    }
+
+    hr {
+      border-color: #363437;
+    }
+
+    img {
+      user-select: none;
+    }
+
+    p {
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      color: #C6C6C6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">
+      <img src="https://fonts.grida.co/apple/emoji/160/2705.png" height="18px" alt="✅" draggable="false">
+      <h1>{{title}}</h1>
+    </div>
+    <hr>
+    <p>{{message}}</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+name: NotEnoughAuth
+version: '1.0'
+main: mrquackduck.notEnoughAuth.NotEnoughAuth
+api-version: '1.21.7'
+
+commands:
+  auth:
+    description: Not Enough Auth command
+    permission: notenoughauth.default
+    aliases:
+      - nea
+      - notenoughauth
+  link:
+    description: Opens a menu to link additional accounts
+    permission: notenoughauth.link
+  unlink:
+    description: Opens a menu to unlink accounts
+    permission: notenoughauth.unlink
+  logout:
+    description: Logs the user out
+    permission: notenoughauth.default
+
+permissions:
+  notenoughauth.admin:
+    description: Allows to use the '/auth reload' command
+    default: op
+  notenoughauth.link:
+    description: Allows to use the '/link' command
+    default: true
+  notenoughauth.unlink:
+    description: Allows to use the '/unlink' command
+    default: true
+  notenoughauth.default:
+    description: Allows to use the '/auth' command
+    default: true
