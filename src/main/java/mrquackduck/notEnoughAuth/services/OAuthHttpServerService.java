@@ -44,7 +44,7 @@ public class OAuthHttpServerService {
     }
 
     public void start() throws IOException {
-        InetSocketAddress address = new InetSocketAddress(config.webIp(), config.webPort());
+        InetSocketAddress address = new InetSocketAddress(config.webPort());
         httpServer = HttpServer.create(address, 0);
 
         try {
