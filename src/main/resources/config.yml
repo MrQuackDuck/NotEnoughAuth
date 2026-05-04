@@ -99,6 +99,7 @@ messages:
   "logged-out": "&fYou've successfully logged out."
   "reloaded": "<prefix> &#ECF4FBReloaded!"
   "disconnected": "Disconnected."
+  "only-players": "<prefix> &cOnly players can use this command!"
   "command-not-found": "<prefix> &#E03E3EOops! That command doesn't exist, or you don't have enough permissions."
   "not-enough-permissions": "<prefix> &#E03E3ENot enough permissions."
   "one-provider-left": "<prefix> &#E03E3EYou have only one provider left linked to your account."
