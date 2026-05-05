@@ -8,7 +8,7 @@
 
 **NotEnoughAuth** is a **Paper (1.21.7+)** plugin that allows you to authenticate players using **OAuth2 providers** (_Google, GitHub, GitLab, Discord, Twitch, Telegram_) based on the [Dialog](https://minecraft.wiki/w/Dialog) functionality.
 
-How to setup: [step-by-step instruction](#configuration).
+How to set up: [step-by-step instruction](#configuration).
 
 ### 👀 Screenshots
 
